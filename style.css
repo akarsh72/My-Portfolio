@@ -58,6 +58,51 @@
         
     }
 
+   .menu-icon {
+        display: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    /* MEdia Query For Responsive nav-container */
+    @media (max-width: 640px) {
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* on being clicking the menu icon, anchor elements will become visible */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: #4e9f8c;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .menu-icon {
+        display: block;
+        color: #DDEB9D;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
 
 
 /* Home section */
